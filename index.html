@@ -1,44 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santi Baidez | Tech passionated geek ;)</title>
-    </head>
-    <body>
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
-        <div class="content">
-            <img src="./sbaidez.jpg" class="profile-pic" alt="profile pic" />
-            <p class="username">Santi Baidez</p>
-            <p class="subtitle">Tech passionated geek ;)</p>
-            <div class="links">
-                <a href="https://drive.google.com/file/d/1wFXN8e_BhWsG7sV2B3EAf9So8mrYfVM_/view?usp=sharing"
-                   target="_blank"
-                   class="link-items">
-                    <i class="fas fa-globe"></i>
-                    <div>CV</div>
-                </a>
-                <a href="https://www.linkedin.com/in/santibaidez/"
-                   target="_blank"
-                   class="link-items">
-                    <i class="fab fa-linkedin"></i>
-                    <div>LinkedIn</div>
-                </a>
-                <a href="https://github.com/santiasecas"
-                   target="_blank"
-                   class="link-items">
-                    <i class="fab fa-github-square"></i>
-                    <div>GitHub</div>
-                </a>
-            </div>
-        </div>
-    </body>
-    <script
-    src="https://kit.fontawesome.com/3fd576ae50.js"
-    crossorigin="anonymous"
-    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Seymour+One&family=Yomogi&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: url('https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60')no-repeat center center/cover;
+        height: 100vh;
+    }
+
+    .container{
+        width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+    }
+
+    .image{
+        border: 0px solid white;
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        margin: auto;
+        background: url(sbaidez.jpg) no-repeat center top/cover;
+        box-shadow: 2px 2px 30px 1px black;
+    }
+
+     .name{
+         text-align: center;
+         color: white;
+         font-family: 'Bebas Neue', cursive;
+         font-size: 33px;
+     }
+     .discription{
+         text-align: center;
+         color: white;
+         font-family: 'Bebas Neue', cursive;
+     }
+
+      .link{
+        text-align: center;
+    height: 70px;
+    width: 100%;
+    background-color: #f1f3f5;
+    font-family: 'Noto Sans Display', sans-serif;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 1px 20px 6px #000000d1;
+    opacity: 0.96;
+    color: black;
+    text-decoration: none;
+      }
+      .link:hover{
+        opacity: 0.9;
+      }
+      .fab{
+          margin: 0 0;
+          color: black;
+          font-size: 24px;
+          margin-top: 12px;
+      }
+      .platform{
+          color: black;
+          text-decoration: none;
+      }
+</style>
+<body>
+
+    <div class="container">
+       <div class="image">
+          
+       </div>
+       <div class="name">
+           SANTI BAIDEZ
+       </div>
+       <div class="discription">
+          Tech passionated geek ;)
+       </div>
+       <a href="https://www.linkedin.com/in/santibaidez/" target="_blank" class="platform">
+       <div id="linkedIn" class="link">
+        <i class="fab fa-linkedin-in"></i>
+        <p> LinkedIn</p> 
+       </div>
+    </a>
+
+    <a href="https://github.com/santiasecas" target="_blank" class="platform">
+       <div id="Github" class="link">
+        <i class="fab fa-github"></i>
+       <p>Github</p> 
+    </div>
+</a>
+
+    <a href="https://drive.google.com/file/d/1wFXN8e_BhWsG7sV2B3EAf9So8mrYfVM_/view?usp=sharing" target="_blank" class="platform">
+    <div id="CV" class="link">
+        <i class="fab fa fa-file" aria-hidden="true"></i>
+        <p>CV</p> 
+    </div>
+</a>
+
+
+    </div>
+    
+</body>
+
+<script src="https://kit.fontawesome.com/63ac9b11ad.js" crossorigin="anonymous"></script>
 </html>
